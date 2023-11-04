@@ -1,0 +1,77 @@
+<!--For tutoring use only-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+</head>
+<script>
+    function instagram(){
+        alert("@zet.lu")
+    }
+    function facebook(){
+        alert("@neilluzt")
+    }
+    function name(){
+        alert("Neil Lu")
+    }
+    function age(){
+        alert("19")
+    }
+    function lottery(){
+        alert("Nice!")
+    }
+</script>
+<body>
+    <h1>Neil's Life</h1>
+
+    <img src="me.jpg"></img>
+    
+    <a href="https://www.instagram.com/zet.lu/">
+        <div class="shape">My Instagram</div>
+    </a>
+
+    <div class="shape" onclick="facebook()">My Facebook</div>
+    <div class="shape" onclick="name()">My Name</div>
+    <div class="shape" onclick="age()">My age</div>
+    <div class="shape" onclick="lottery()">Lottery</div>
+</body>
+<style>
+    img{
+        width: 400px;
+        display: block;
+        margin: auto;
+    }
+    body{
+        background-color: lightgray;
+        color: white;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        margin: 30px;
+    }
+    .shape {
+        color: white;
+        font-family: sans-serif;
+        width: 400px;
+        height: 70px;
+        background-color: rgb(70, 121, 105);
+        padding: 10px;
+        margin: 30px auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 35px;
+        line-height: 50px;
+    }
+    #iddd{
+        background-color: red;
+    }
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+</html>
