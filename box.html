@@ -24,7 +24,8 @@
     }
 </script>
 <body>
-    <h1>Neil's Life</h1>
+
+    <h1>Experience Neil's <i>Amazing</i> Life <span>Journey</span></h1>
 
     <img src="me.jpg"></img>
     
@@ -38,6 +39,12 @@
     <div class="shape" onclick="lottery()">Lottery</div>
 </body>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+</style>
+<style>
+    a{
+        text-decoration: none;
+    }
     img{
         width: 400px;
         display: block;
@@ -46,11 +53,20 @@
     body{
         background-color: lightgray;
         color: white;
+        background-image: url(mountains.png);
+        background-repeat: no-repeat;
+        background-position: 0 bottom;
+        background-size: 100%;
     }
     h1{
-        color: white;
+        color: black;
         text-align: center;
         margin: 30px;
+        font-size: 80px;
+        font-family: 'Playfair Display', serif;
+    }
+    span{
+        color: rgb(70, 121, 105);
     }
     .shape {
         color: white;
