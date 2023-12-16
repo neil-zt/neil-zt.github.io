@@ -4,34 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is it a prime number? </title>
+    <title>Is it a perfect number? </title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="content">
         Input a Number: <input type="text" id="num">
-        <div class="shape" onclick="isPrime()">
+        <div class="shape" onclick="isPerfect()">
             Check
         </div>
     </div>
 </body>
 <script>
 
-    function isPrime(){
-        num = parseInt(getNum())
-        hasRemainder = true
+    function isPerfect(){
+        let num = parseInt(getNum())
 
-        for(i = 2; i < num; i=i+1){ // 初始設定為i=2; i每次加1; i必須小於num
+        let total = 0
+        for(i = 1; i < num; i=i+1){ // 初始設定為i=1; i每次加1; i必須小於num
             if(num % i == 0){ // 整除了
-                hasRemainder = false
-                break
+                total = total + i
             }
         }
 
-        if(hasRemainder == true){
-            alert(num + " is a prime number")
+        if(total == num){
+            alert(num + " is a perfect number")
         }else{
-            alert(num + " is not a prime number")
+            alert(num + " is not a perfect number")
         }
 
     }

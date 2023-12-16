@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model Demo</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <script>
     function instagram(){
@@ -23,6 +24,7 @@
         alert("Nice!")
     }
 </script>
+
 <body>
 
     <h1>Experience Neil's <i>Amazing</i> Life <span>Journey</span></h1>
@@ -35,62 +37,13 @@
     <a href="./isprime.html" target="_blank">
         <div class="shape">Prime Number Checker</div>
     </a>
+    <a href="./isperfect.html" target="_blank">
+        <div class="shape">Perfect Number Checker</div>
+    </a>
 
     <div class="shape" onclick="facebook()">My Facebook</div>
     <div class="shape" onclick="name()">My Name</div>
     <div class="shape" onclick="age()">My age</div>
     <div class="shape" onclick="lottery()">Lottery</div>
 </body>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-</style>
-<style>
-    a{
-        text-decoration: none;
-    }
-    img{
-        width: 400px;
-        display: block;
-        margin: auto;
-    }
-    body{
-        background-color: lightgray;
-        color: white;
-        background-image: url(mountains.png);
-        background-repeat: no-repeat;
-        background-position: 0 bottom;
-        background-size: 100%;
-    }
-    h1{
-        color: black;
-        text-align: center;
-        margin: 30px;
-        font-size: 80px;
-        font-family: 'Playfair Display', serif;
-    }
-    span{
-        color: rgb(70, 121, 105);
-    }
-    .shape {
-        color: white;
-        font-family: sans-serif;
-        width: 400px;
-        height: 70px;
-        background-color: rgb(70, 121, 105);
-        padding: 10px;
-        margin: 30px auto;
-        font-size: 20px;
-        text-align: center;
-        border-radius: 35px;
-        line-height: 50px;
-    }
-    #iddd{
-        background-color: red;
-    }
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-</style>
 </html>
