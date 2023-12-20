@@ -26,7 +26,7 @@ h1{
 span{
     color: rgb(70, 121, 105);
 }
-.shape {
+.shape{
     color: white;
     font-family: sans-serif;
     width: 300px;
@@ -39,6 +39,14 @@ span{
     border-radius: 35px;
     line-height: 50px;
     box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    transition: 0.15s;
+}
+.shape:hover{
+    color: black;
+    background-color: white;
+}
+.shape:active{
+    scale: 1.1;
 }
 #iddd{
     background-color: red;
@@ -48,21 +56,6 @@ span{
     margin: 0;
     padding: 0;
 }
-/* .content{
-    background-color: white;
-    color: black;
-    width: 360px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,.05);
-    position: relative;
-    top: 50vh;
-    left: 50vw;
-    transform: translateX(-50%) translateY(-50%);
-    font-family: Arial, Helvetica, sans-serif;
-} */
 .content{
     background-color: white;
     color: black;
